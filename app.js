@@ -30,7 +30,7 @@ dotenv.config({
 });
 
 const mongoURI = process.env.MONGO_URI;
-const port = 3000;
+const port = process.env.PORT || 3000;
 // createSingleChats(10)
 // createGroupChats(10)
 const adminSecretKey = process.env.ADMIN_SECRET_KEY || "Aman9711";

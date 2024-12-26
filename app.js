@@ -23,7 +23,7 @@ import cors from "cors";
 import { v2 as cloudinary } from "cloudinary";
 import { corsOptions } from "./constants/config.js";
 import { socketAuthenticator } from "./middlewares/auth.js";
-import { ONLINE_USERS } from "../client/src/constants/event.js";
+import { ONLINE_USERS } from "./constants/event.js";
 
 dotenv.config({
   path: "./.env",
